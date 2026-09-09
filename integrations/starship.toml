@@ -1,0 +1,100 @@
+format = """
+[╭](bold overlay1)$username\
+$directory\
+$git_branch\
+$git_status\
+$time\
+\n$character\
+"""
+
+# =============Visauls================
+
+palette = 'cyberdream'
+
+[palettes.cyberdream]
+text      = '#c7cfff'
+overlay1  = '#242937'
+color_fg0 = '#c7cfff'
+color_bg0 = '#0a0e14'
+color_bg1 = '#0f1117'
+color_bg3 = '#242937'
+color_blue   = '#5ea1ff'
+color_aqua   = '#5ef1ff'
+color_green  = '#5eff6c'
+color_orange = '#ffb65e'
+color_red    = '#ff0303'
+color_yellow = '#f1ff5e'
+color_pink   = '#ff5ea0'
+red = '#ff6e5e'
+
+# =============Modules================
+
+[username]
+show_always = true
+style_user = "fg:text bold"
+style_root = "fg:red bold"
+format = '[$user]($style)'
+
+[hostname]
+ssh_only = false
+style = "fg:color_pink bold"
+format = '[@$hostname ]($style)'
+
+[os]
+disabled = false
+style = "fg:color_pink bold"
+format = "([ $symbol ]($style))"
+
+[os.symbols]
+Windows = ""
+Ubuntu = ""
+Debian = ""
+Arch = ""
+Manjaro = ""
+Linux = ""
+Macos = ""
+Unknown = ""
+Android = "ø"
+
+[directory]
+style = "fg:color_blue bold"
+format = '(\[in [$path]($style)\])'
+truncation_length = 2
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music"     = " "
+"Pictures"  = " "
+
+[git_branch]
+format = '-\[[$symbol$branch]($style)'
+
+[git_status]
+stashed = '\$'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+conflicted = '='
+deleted = '✘'
+renamed = '»'
+modified = '!'
+staged = '+'
+untracked = '?'
+format = '([ $all_status$ahead_behind]($style))\]'
+
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:color_aqua"
+format = ' [$time]($style)'
+
+[character]
+format = """
+[╰─$symbol](fg:overlay1) """
+success_symbol = '[](fg:text bold)'
+error_symbol   = '[](fg:red bold)'
+
+# =======Programs environments========

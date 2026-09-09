@@ -1,0 +1,7 @@
+.state/
+.codex/
+dist/
+UX-visual-inspiration.mp4
+__pycache__/
+*.pyc
+*.part

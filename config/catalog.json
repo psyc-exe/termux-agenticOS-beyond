@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "reviewed": "2026-09-09",
+  "images": {
+    "debian": {"repository": "library/debian", "tag": "trixie-slim", "os_id": "debian", "version": "13"},
+    "ubuntu": {"repository": "library/ubuntu", "tag": "26.04", "os_id": "ubuntu", "version": "26.04"},
+    "kali": {"repository": "kalilinux/kali-rolling", "tag": "latest", "os_id": "kali", "version": "rolling"},
+    "parrot": {"repository": "parrotsec/core", "tag": "latest", "os_id": "parrot", "version": "rolling"}
+  },
+  "ai": {"codex-vl": "@mmmbuto/codex-vl@0.153.2-vl.2", "tgpt": "github.com/aandrew-me/tgpt/v2@v2.14.0", "tgpt_sum": "h1:Cg3Cff++/Rgp0mgY1h8qjWjYw7u4OEmANQZo1f/8OLI="}
+}

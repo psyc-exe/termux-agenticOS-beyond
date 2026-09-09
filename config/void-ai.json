@@ -1,0 +1,111 @@
+{
+  "snapshot": "2026-09-09",
+  "key_sha256": "bca339c86d580f1287f575b3a096b80f18dd65dd76ecd117c2e21290d992f1c1",
+  "packages": [
+    {
+      "id": "9router",
+      "version": "0.5.55",
+      "description": "Smart gateway between your tools and 60+ AI providers 9Router provides a smart 3\u2011tier fallback system to maximize your AI subscriptions across providers (Cursor, Claude Code, Codex, Cline, Copilot\u2026). Includes built\u2011in RTK and Caveman that save 20\u201365% of tokens, keeping you coding even when limits are hit.",
+      "command": "9router",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/9router"
+    },
+    {
+      "id": "antigravity-cli",
+      "version": "1.1.22",
+      "description": "AI\u2011powered coding assistant (glibc wrapper for Termux) Antigravity CLI provides real\u2011time code suggestions. This package downloads the official Linux ARM64 binary, applies necessary memory patches, and runs it inside the Termux glibc environment.",
+      "command": "agy",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/antigravity-cli"
+    },
+    {
+      "id": "claude-code",
+      "version": "2.1.233",
+      "description": "Claude Code - AI coding assistant by Anthropic Claude Code is an AI-powered coding assistant from Anthropic. This package downloads and installs the official binary release with a glibc wrapper for Termux compatibility.",
+      "command": "claude",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/claude-code"
+    },
+    {
+      "id": "codex-cli",
+      "version": "0.150.1",
+      "description": "Codex CLI for Termux (npm version) Codex is a lightweight coding agent that runs in your terminal. This package installs the Termux\u2011compatible npm version.",
+      "command": "codex",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/codex-cli"
+    },
+    {
+      "id": "copilot-cli",
+      "version": "1.0.82",
+      "description": "GitHub Copilot CLI (glibc version) GitHub Copilot CLI brings AI-powered assistance to your terminal. This package uses the glibc build and includes a wrapper to run inside Termux's glibc environment.",
+      "command": "copilot",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/copilot-cli"
+    },
+    {
+      "id": "freebuff",
+      "version": "0.0.162",
+      "description": "Free, subscription-less AI coding agent for the terminal freebuff is a free AI coding agent that runs in your terminal \u2014 describe what you want and it edits your code, with no subscription or configuration required. Built on the Codebuff platform and adapted for Termux/Android. This package uses the glibc build and includes a wrapper to run inside Termux's glibc environment.",
+      "command": "freebuff",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/freebuff"
+    },
+    {
+      "id": "hermes-agent",
+      "version": "0.19.0-2",
+      "description": "AI-powered coding assistant and workflow automation tool Hermes Agent is an autonomous AI agent designed to assist with coding, research, and complex task automation through natural language commands.",
+      "command": "hermes",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/hermes-agent"
+    },
+    {
+      "id": "kimi-code",
+      "version": "0.39.1",
+      "description": "AI-powered coding assistant for the terminal Kimi Code provides intelligent code completions and AI assistance directly in your terminal, leveraging Moonshot AI's language models.",
+      "command": "kimi",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/kimi-code"
+    },
+    {
+      "id": "laudacode",
+      "version": "0.4.0",
+      "description": "Fast, lightweight AI coding agent for your terminal LaudaCode is a pure Rust AI agent that lives in your terminal. It reads your project, edits files, runs commands and fetches web docs using any OpenAI-compatible API (OpenAI, OpenRouter, Groq, DeepSeek, Together, Ollama, LM Studio, and more). Supports approval modes, image input, streaming responses, 12 color themes, ambient effects, session persistence, and slash commands.",
+      "command": "laudacode",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/laudacode"
+    },
+    {
+      "id": "mimocode",
+      "version": "0.1.13",
+      "description": "AI\u2011powered coding assistant (glibc wrapper for Termux) MiMo\u2011Code is an intelligent code completion and generation tool. This package downloads the official Linux ARM64 or x86_64 binary and runs it inside the Termux glibc environment.",
+      "command": "mimocode",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/mimocode"
+    },
+    {
+      "id": "mmx-cli",
+      "version": "1.0.22",
+      "description": "CLI tool for MiniMax AI Command-line interface for interacting with MiniMax AI models, including chat, completion, and image generation features.",
+      "command": "mmx",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/mmx-cli"
+    },
+    {
+      "id": "openclaude",
+      "version": "0.30.0",
+      "description": "Open\u2011source coding\u2011agent CLI for cloud and local LLMs OpenClaude provides a command\u2011line interface for interacting with large language models from multiple providers (cloud or local), with features tailored for coding assistance and automation.",
+      "command": "openclaude",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/openclaude"
+    },
+    {
+      "id": "opencode",
+      "version": "1.18.25",
+      "description": "AI\u2011powered coding assistant (glibc version) OpenCode provides real\u2011time code completions and AI assistance. This package uses the glibc build and includes a wrapper to run inside Termux\u2019s glibc environment.",
+      "command": "opencode",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/opencode"
+    },
+    {
+      "id": "termux-ai",
+      "version": "3.0",
+      "description": "Interactive AI Assistant for Termux Your AI companion in Termux with support for 10+ AI providers, 50+ image generation models, and interactive command-line interface. Provides comprehensive AI capabilities directly within Termux terminal.",
+      "command": "termux-ai",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/termux-ai"
+    },
+    {
+      "id": "utim-cli",
+      "version": "2.3.19",
+      "description": "UTIM CLI \u2014 AI-powered unified terminal intelligence manager UTIM is a CLI tool that provides AI-assisted terminal workflows. This package installs the npm version via @emend-ai/utim.",
+      "command": "utim",
+      "source": "https://github.com/termuxvoid/repo/tree/main/packages/utim-cli"
+    }
+  ]
+}
