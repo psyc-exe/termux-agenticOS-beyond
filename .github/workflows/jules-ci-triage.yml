@@ -9,6 +9,7 @@ on:
   workflow_run:
     workflows:
       - installer-checks
+      - Android Termux arm64 Tests
     types: [completed]
 
 permissions:
@@ -43,7 +44,7 @@ jobs:
         uses: actions/github-script@v7
         env:
           JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
-          JULES_GUIDE: README.md and docs/VALIDATION.md
+          JULES_GUIDE: README.md, docs/VALIDATION.md, and handoff.md
         with:
           script: |
             const triage = require('./scripts/jules-ci-triage.cjs');

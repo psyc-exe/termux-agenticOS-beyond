@@ -1,12 +1,12 @@
 # Jules automation for A
 
-This repository is the **A** side of the A/B experiment. Its CI workflow is `installer-checks`. Jules should work only in `psyc-exe/termux-agenticOS-beyond` when handling an A issue. Read `README.md` and `docs/VALIDATION.md` before changing installer behavior. Host checks do not prove Android installation, X11, GPU, native root, or APK acceptance.
+This repository is the **A** side of the A/B experiment. Its CI workflows are `installer-checks` and `Android Termux arm64 Tests`. Jules should work only in `psyc-exe/termux-agenticOS-beyond` when handling an A issue. Read `README.md`, `docs/VALIDATION.md`, and `handoff.md` before changing installer behavior. Host checks and the ARM64 container do not prove Android installation, X11, GPU, native root, or APK acceptance.
 
 ## One-time setup
 
 1. Connect this repository to the Jules GitHub app. The Jules CLI can confirm access with `jules remote list --repo`.
 2. Create a Jules API key in [Jules Settings](https://jules.google.com/settings). Add it to this repository's GitHub Actions secrets as `JULES_API_KEY`. Do not commit it or place it in the Jules Initial Setup script.
-3. Push `.github/workflows/jules-ci-triage.yml` to `main`. A failed `installer-checks` run on `main` then creates one issue per workflow and commit, starts a Jules API session with automatic PR creation, and records the session link in that issue. PRs stay open for review. If the workflow is renamed, update the monitored name.
+3. Push `.github/workflows/jules-ci-triage.yml` to `main`. A failed `installer-checks` or `Android Termux arm64 Tests` run on `main` then creates one issue per workflow and commit, starts a Jules API session with automatic PR creation, and records the session link in that issue. PRs stay open for review. If a workflow is renamed, update the monitored name.
 4. In Jules **Configuration → Initial Setup**, enter `bash scripts/jules-env-setup.sh` and select [Run and Snapshot](https://jules.google/docs/environment/). It runs the host gate and dispatcher tests inside Jules's Ubuntu VM. CI also runs ShellCheck when installed; `scripts/check.sh` reports when ShellCheck is unavailable in the Jules VM.
 
 ## Ongoing maintenance
