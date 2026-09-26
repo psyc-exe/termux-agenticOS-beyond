@@ -1,0 +1,27 @@
+name: Android Termux arm64 Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - name: Run tests in Termux docker
+        run: |
+          docker run --rm --privileged \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            termux/termux-docker:aarch64 \
+            bash -c "apt update && apt install -y python bash curl git ncurses-utils file xz-utils tar && bash scripts/check.sh"
