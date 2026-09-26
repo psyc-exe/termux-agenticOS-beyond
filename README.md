@@ -10,6 +10,8 @@ Mi A3, Android 13: a device screenshot of the XFCE desktop during a Termux:X11 t
 
 The [27 Sep installer checks](https://github.com/psyc-exe/termux-agenticOS-beyond/actions/runs/36263091865/attempts/2) passed on `main` (38 shell checks and 20 Python tests). These host checks do not build an APK.
 
+The separate [Android Termux arm64 container run](https://github.com/psyc-exe/termux-agenticOS-beyond/actions/runs/36264509179) failed on 27 Sep in a test fixture that invokes `/usr/bin/env`. [Jules is investigating](https://jules.google.com/session/7127312261449729752). Container checks do not replace device acceptance.
+
 <img src="docs/evidence/installer-checks-2026-09-27.png" alt="GitHub Actions installer checks passed on main" width="720">
 
 ## Run in native Termux
