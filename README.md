@@ -4,6 +4,14 @@ A modular Android 12–15+ installer with Debian/Ubuntu, a separate Kali/Parrot 
 
 **Status:** software store and native AI integration implemented; phone smoke testing is recorded in `docs/VALIDATION.md`. Full distro installation, GUI, native chroot and agent task/authentication acceptance remain pending. The APK design includes an optional Linux Home launcher; no integrated APK or published download endpoint has been built.
 
+<img src="docs/evidence/mi-a3-neon-desktop.png" alt="Mi A3 showing the XFCE desktop in Termux:X11" width="360">
+
+Mi A3, Android 13: a device screenshot of the XFCE desktop during a Termux:X11 test. This captures the display only; the remaining acceptance gates are tracked in [validation](docs/VALIDATION.md).
+
+The [27 Sep installer checks](https://github.com/psyc-exe/termux-agenticOS-beyond/actions/runs/36263091865/attempts/2) passed on `main` (38 shell checks and 20 Python tests). These host checks do not build an APK.
+
+<img src="docs/evidence/installer-checks-2026-09-27.png" alt="GitHub Actions installer checks passed on main" width="720">
+
 ## Run in native Termux
 
 Copy/clone this repository into Termux's private home, then:
