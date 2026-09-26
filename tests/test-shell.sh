@@ -79,8 +79,8 @@ reject bash install.sh --plan --tgpt invalid
 assert bash install.sh --plan --mode proot --base ubuntu --tools parrot --footprint full --ai distro --tgpt yes --desktop xfce
 
 # Native tgpt does not use PRoot, reinterpret question flags, or inherit provider rotation.
-cat > "$testdir/fake-tgpt" <<'EOF'
-#!/usr/bin/env bash
+printf '#!%s\n' "$(command -v bash)" > "$testdir/fake-tgpt"
+cat >> "$testdir/fake-tgpt" <<'EOF'
 printf '%s\n' "$@" > "$CHAT_TEST_ARGS"
 printf '%s\n' "${AI_ROTATE_PROVIDERS-unset}" > "$CHAT_TEST_ENV"
 EOF
